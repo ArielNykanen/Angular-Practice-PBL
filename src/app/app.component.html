@@ -1,0 +1,3 @@
+<app-header (futureSelected)="onNavigate($event)"></app-header>
+<app-recipes *ngIf="loadedFuture === 'recipes'"></app-recipes>
+<app-shopping-list *ngIf="loadedFuture !== 'recipes'"></app-shopping-list>
